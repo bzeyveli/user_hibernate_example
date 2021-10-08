@@ -20,14 +20,4 @@ public class DaoConnection {
 		Session session=sessionFactor.openSession();
 		return session;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	SessionFactory factory = (SessionFactory) new Configuration().configure("hibernate.cfg.xml")
-	.addAnnotatedClass(User.class).buildSessionFactory();
 }

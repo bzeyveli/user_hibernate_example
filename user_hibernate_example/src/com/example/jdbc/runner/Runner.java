@@ -9,11 +9,11 @@ public class Runner {
 	public static void main(String[] args) {
 		
 		User user = new User();
-		user.setTckn(8);
-		user.setLastName("mehmet");
+		user.setTckn(10);
+		user.setLastName("mehmett");
 		user.setSurName("zeyveli");
 		user.setEmail("mehmetze@gmail.com");
-		user.setPhone("010212");
+		user.setPhone("0102120");
 		DaoManager daoManager = new DaoManager();
 		boolean resultCreate = daoManager.create(user);
 		System.out.println("create : " + resultCreate);
@@ -26,7 +26,7 @@ public class Runner {
 		
 		boolean resultUpdate = daoManager.update(user);
 		System.out.println("update :" + resultUpdate);
-		boolean resultDelete = daoManager.deletee(9);
+		boolean resultDelete = daoManager.deletee(8);
 		System.out.println("delete :" + resultDelete);
 	}
 
